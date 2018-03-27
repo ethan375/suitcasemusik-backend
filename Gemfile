@@ -1,9 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'pg', '0.21'
+gem 'pry'
 gem 'sinatra'
 gem 'sinatra-activerecord'
+gem 'sinatra-cross_origin', '~> 0.3.1'
 gem 'json'
-gem 'sinatra-cross_origin', '~>0.3.1'
+gem 'pg', '0.21'
 gem 'rerun'
-gem 'pry'

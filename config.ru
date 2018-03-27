@@ -1,23 +1,17 @@
 require 'sinatra/base'
 require 'sinatra/activerecord'
 
-# Controllers
+# controllers
 require './controllers/ApplicationController'
 require './controllers/QuestionController'
-require './controllers/AnswerController'
 
-# Models
-require './models/AnswerModel'
+# models
 require './models/QuestionModel'
 
 map ('/') {
   run ApplicationController
 }
 
-map ('/questions') {
+map ('/question') {
   run QuestionController
-}
-
-map ('/answers') {
-  run AnswerController
 }
